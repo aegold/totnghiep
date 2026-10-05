@@ -1,0 +1,16 @@
+# Virtual environment
+.venv/
+
+# Persisted vector index - regenerated automatically on startup
+data/
+
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Local secrets. Commit .env.example instead.
+.env
+
+# Captured SSE contract fixture IS committed: the frontend contract test in
+# fe-learning/src/lib/__tests__/sseContract.integration.test.ts depends on it.
+!samples/

@@ -1,0 +1,167 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+  error:
+    # Never leak a stack trace or the exception message through the Boot
+    # default error page; GlobalExceptionHandler owns every error body.
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never
+
+spring:
+  application:
+    name: adaptive-learning
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/adaptive_learning_db?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    # Local development defaults. Override in any real environment with the
+    # DB_USERNAME / DB_PASSWORD environment variables - never commit a real
+    # credential, and never rely on these defaults outside a workstation.
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:123}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      pool-name: AdaptiveLearningPool
+      maximum-pool-size: 20
+      minimum-idle: 5
+      connection-timeout: 30000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+
+  jpa:
+    hibernate:
+      # Flyway owns the schema. `validate` makes Hibernate fail fast on any
+      # drift between the entity model and the migrated schema instead of
+      # silently issuing DDL in production.
+      ddl-auto: validate
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        highlight_sql: true
+        jdbc:
+          time_zone: UTC
+          batch_size: 50
+        order_inserts: true
+        order_updates: true
+    open-in-view: false
+    show-sql: false
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+    baseline-version: 0
+    locations: classpath:db/migration
+    validate-on-migrate: true
+    # Keeps a short history; audit-friendly without unbounded growth.
+    clean-disabled: true
+
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+    time-zone: UTC
+
+  mvc:
+    problemdetails:
+      # The advice handler renders a bespoke Vietnamese envelope; Boot's
+      # RFC 7807 representation is therefore disabled.
+      enabled: false
+
+app:
+  seed:
+    # Loads the demonstration course on an empty database. Disabled under the
+    # `test` profile so it cannot contaminate suites that count what they find.
+    enabled: ${APP_SEED_ENABLED:true}
+
+  jwt:
+    # Base64-encoded 256-bit key for HMAC-SHA256. Override in production via
+    # the JWT_SECRET_KEY environment variable - never commit a real key.
+    secret-key: ${JWT_SECRET_KEY:MC0wOCV4egCP1Us+hOx/EnAQ5kH6NqfPIOBUxr7PpwE=}
+    # 15 minutes - short enough that a leaked access token has minimal value.
+    access-token-expiration: 900000
+    # 7 days - the persisted session window on the React client.
+    refresh-token-expiration: 604800000
+    issuer: adaptive-learning-api
+
+  cors:
+    # Must stay in sync with the Vite dev server port and the production origin.
+    allowed-origins:
+      - http://localhost:5173
+    allowed-methods:
+      - GET
+      - POST
+      - PUT
+      - DELETE
+      - PATCH
+      - OPTIONS
+    allowed-headers:
+      - Accept
+      - Authorization
+      - Content-Type
+      - Origin
+      - X-Requested-With
+      - X-Correlation-Id
+    exposed-headers:
+      - X-Correlation-Id
+    allow-credentials: true
+    max-age: 3600
+
+logging:
+  level:
+    root: INFO
+    com.thesis.elearning: ${LOG_LEVEL_APP:INFO}
+    org.hibernate.SQL: WARN
+    org.springframework.security: INFO
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss.SSS} %-5level [%thread] %logger{36} - %msg%n"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: never
+
+---
+# H2 in-memory profile: lets the context boot and tests run without MySQL.
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    url: jdbc:h2:mem:adaptive_learning_test;MODE=MySQL;DB_CLOSE_DELAY=-1;DATABASE_TO_LOWER=TRUE
+    username: sa
+    password: ""
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.H2Dialect
+    # Run spring.sql.init AFTER Hibernate has created the entity tables,
+    # otherwise H2Schema.sql references `users` before it exists.
+    defer-datasource-initialization: true
+  flyway:
+    enabled: false
+  sql:
+    init:
+      # Hibernate's create-drop emits the entities but not the implicit
+      # @JoinTable, so this file adds the join table and the seeded roles that
+      # keep the in-memory schema equivalent to MySQL's.
+      schema-locations: classpath:H2Schema.sql
+      mode: always
+
+# The demonstration seeder is a CommandLineRunner, so it would execute on every
+# @SpringBootTest context and its rows would leak into suites that count what
+# they find. Tests that want the seeded dataset opt in explicitly - see the
+# integration suite, which also points at its own H2 database.
+app:
+  seed:
+    enabled: false

@@ -1,0 +1,502 @@
+data: {"type": "citation", "source": {"sourceId": "slides_ch1#p1#c0", "label": "Trang 1", "documentTitle": "slides_ch1.pdf", "location": "p.1", "snippet": "MANG MAY TINH VA TRUYEN THONG DU LIEU Chuong 1: Tong quan ve Mang may tinh Bai 1: Mo hinh OSI va Kien truc TCP/IP Bai 2: Dia chi IPv4 va Chia Subnet Nguon: Bo giang Nhap mon Mang may tinh va An toan he thong.", "score": 0.8063}}
+
+data: {"type": "token", "content": "> "}
+
+data: {"type": "token", "content": "**Chế "}
+
+data: {"type": "token", "content": "độ "}
+
+data: {"type": "token", "content": "nội "}
+
+data: {"type": "token", "content": "bộ:** "}
+
+data: {"type": "token", "content": "Trợ "}
+
+data: {"type": "token", "content": "giảng "}
+
+data: {"type": "token", "content": "đang "}
+
+data: {"type": "token", "content": "hoạt "}
+
+data: {"type": "token", "content": "động "}
+
+data: {"type": "token", "content": "ở "}
+
+data: {"type": "token", "content": "chế "}
+
+data: {"type": "token", "content": "độ "}
+
+data: {"type": "token", "content": "dự "}
+
+data: {"type": "token", "content": "phòng "}
+
+data: {"type": "token", "content": "cục "}
+
+data: {"type": "token", "content": "bộ "}
+
+data: {"type": "token", "content": "(không "}
+
+data: {"type": "token", "content": "gọi "}
+
+data: {"type": "token", "content": "được "}
+
+data: {"type": "token", "content": "dịch "}
+
+data: {"type": "token", "content": "vụ "}
+
+data: {"type": "token", "content": "AI "}
+
+data: {"type": "token", "content": "bên "}
+
+data: {"type": "token", "content": "ngoài), "}
+
+data: {"type": "token", "content": "nên "}
+
+data: {"type": "token", "content": "câu "}
+
+data: {"type": "token", "content": "trả "}
+
+data: {"type": "token", "content": "lời "}
+
+data: {"type": "token", "content": "được "}
+
+data: {"type": "token", "content": "tổng "}
+
+data: {"type": "token", "content": "hợp "}
+
+data: {"type": "token", "content": "trực "}
+
+data: {"type": "token", "content": "tiếp "}
+
+data: {"type": "token", "content": "từ "}
+
+data: {"type": "token", "content": "nội "}
+
+data: {"type": "token", "content": "dung "}
+
+data: {"type": "token", "content": "tài "}
+
+data: {"type": "token", "content": "liệu "}
+
+data: {"type": "token", "content": "bạn "}
+
+data: {"type": "token", "content": "đã "}
+
+data: {"type": "token", "content": "chọn.\n\n"}
+
+data: {"type": "token", "content": "Chào "}
+
+data: {"type": "token", "content": "bạn! "}
+
+data: {"type": "token", "content": "Câu "}
+
+data: {"type": "token", "content": "hỏi "}
+
+data: {"type": "token", "content": "của "}
+
+data: {"type": "token", "content": "bạn "}
+
+data: {"type": "token", "content": "về "}
+
+data: {"type": "token", "content": "**Dia "}
+
+data: {"type": "token", "content": "chi "}
+
+data: {"type": "token", "content": "IPv4 "}
+
+data: {"type": "token", "content": "la "}
+
+data: {"type": "token", "content": "gi?** "}
+
+data: {"type": "token", "content": "rất "}
+
+data: {"type": "token", "content": "phù "}
+
+data: {"type": "token", "content": "hợp "}
+
+data: {"type": "token", "content": "với "}
+
+data: {"type": "token", "content": "chủ "}
+
+data: {"type": "token", "content": "đề "}
+
+data: {"type": "token", "content": "đang "}
+
+data: {"type": "token", "content": "học. "}
+
+data: {"type": "token", "content": "Dưới "}
+
+data: {"type": "token", "content": "đây "}
+
+data: {"type": "token", "content": "là "}
+
+data: {"type": "token", "content": "phần "}
+
+data: {"type": "token", "content": "tổng "}
+
+data: {"type": "token", "content": "hợp.\n\n"}
+
+data: {"type": "token", "content": "### "}
+
+data: {"type": "token", "content": "1. "}
+
+data: {"type": "token", "content": "Phần "}
+
+data: {"type": "token", "content": "bạn "}
+
+data: {"type": "token", "content": "đang "}
+
+data: {"type": "token", "content": "tập "}
+
+data: {"type": "token", "content": "trung\n"}
+
+data: {"type": "token", "content": "Bạn "}
+
+data: {"type": "token", "content": "đã "}
+
+data: {"type": "token", "content": "đánh "}
+
+data: {"type": "token", "content": "dấu "}
+
+data: {"type": "token", "content": "đoạn: "}
+
+data: {"type": "token", "content": "“Bai "}
+
+data: {"type": "token", "content": "2: "}
+
+data: {"type": "token", "content": "Dia "}
+
+data: {"type": "token", "content": "chi "}
+
+data: {"type": "token", "content": "IPv4 "}
+
+data: {"type": "token", "content": "va "}
+
+data: {"type": "token", "content": "Chia "}
+
+data: {"type": "token", "content": "Subnet”. "}
+
+data: {"type": "token", "content": "Đây "}
+
+data: {"type": "token", "content": "là "}
+
+data: {"type": "token", "content": "ý "}
+
+data: {"type": "token", "content": "chính "}
+
+data: {"type": "token", "content": "cần "}
+
+data: {"type": "token", "content": "nắm: "}
+
+data: {"type": "token", "content": "hãy "}
+
+data: {"type": "token", "content": "đọc "}
+
+data: {"type": "token", "content": "nó "}
+
+data: {"type": "token", "content": "theo "}
+
+data: {"type": "token", "content": "ba "}
+
+data: {"type": "token", "content": "bước "}
+
+data: {"type": "token", "content": "— "}
+
+data: {"type": "token", "content": "xác "}
+
+data: {"type": "token", "content": "định "}
+
+data: {"type": "token", "content": "thuật "}
+
+data: {"type": "token", "content": "ngữ "}
+
+data: {"type": "token", "content": "chuyên "}
+
+data: {"type": "token", "content": "ngành, "}
+
+data: {"type": "token", "content": "hiểu "}
+
+data: {"type": "token", "content": "vai "}
+
+data: {"type": "token", "content": "trò "}
+
+data: {"type": "token", "content": "của "}
+
+data: {"type": "token", "content": "nó "}
+
+data: {"type": "token", "content": "trong "}
+
+data: {"type": "token", "content": "hệ "}
+
+data: {"type": "token", "content": "thống, "}
+
+data: {"type": "token", "content": "rồi "}
+
+data: {"type": "token", "content": "liên "}
+
+data: {"type": "token", "content": "hệ "}
+
+data: {"type": "token", "content": "với "}
+
+data: {"type": "token", "content": "tình "}
+
+data: {"type": "token", "content": "huống "}
+
+data: {"type": "token", "content": "thực "}
+
+data: {"type": "token", "content": "tế "}
+
+data: {"type": "token", "content": "mà "}
+
+data: {"type": "token", "content": "bạn "}
+
+data: {"type": "token", "content": "đã "}
+
+data: {"type": "token", "content": "học "}
+
+data: {"type": "token", "content": "trước "}
+
+data: {"type": "token", "content": "đó.\n\n"}
+
+data: {"type": "token", "content": "### "}
+
+data: {"type": "token", "content": "1. "}
+
+data: {"type": "token", "content": "Nội "}
+
+data: {"type": "token", "content": "dung "}
+
+data: {"type": "token", "content": "liên "}
+
+data: {"type": "token", "content": "quan "}
+
+data: {"type": "token", "content": "từ "}
+
+data: {"type": "token", "content": "tài "}
+
+data: {"type": "token", "content": "liệu\n"}
+
+data: {"type": "token", "content": "- "}
+
+data: {"type": "token", "content": "MANG "}
+
+data: {"type": "token", "content": "MAY "}
+
+data: {"type": "token", "content": "TINH "}
+
+data: {"type": "token", "content": "VA "}
+
+data: {"type": "token", "content": "TRUYEN "}
+
+data: {"type": "token", "content": "THONG "}
+
+data: {"type": "token", "content": "DU "}
+
+data: {"type": "token", "content": "LIEU "}
+
+data: {"type": "token", "content": "Chuong "}
+
+data: {"type": "token", "content": "1: "}
+
+data: {"type": "token", "content": "Tong "}
+
+data: {"type": "token", "content": "quan "}
+
+data: {"type": "token", "content": "ve "}
+
+data: {"type": "token", "content": "Mang "}
+
+data: {"type": "token", "content": "may "}
+
+data: {"type": "token", "content": "tinh "}
+
+data: {"type": "token", "content": "Bai "}
+
+data: {"type": "token", "content": "1: "}
+
+data: {"type": "token", "content": "Mo "}
+
+data: {"type": "token", "content": "hinh "}
+
+data: {"type": "token", "content": "OSI "}
+
+data: {"type": "token", "content": "va "}
+
+data: {"type": "token", "content": "Kien "}
+
+data: {"type": "token", "content": "truc "}
+
+data: {"type": "token", "content": "TCP/IP "}
+
+data: {"type": "token", "content": "Bai "}
+
+data: {"type": "token", "content": "2: "}
+
+data: {"type": "token", "content": "Dia "}
+
+data: {"type": "token", "content": "chi "}
+
+data: {"type": "token", "content": "IPv4 "}
+
+data: {"type": "token", "content": "va "}
+
+data: {"type": "token", "content": "Chia "}
+
+data: {"type": "token", "content": "Subnet "}
+
+data: {"type": "token", "content": "Nguon: "}
+
+data: {"type": "token", "content": "Bo "}
+
+data: {"type": "token", "content": "giang "}
+
+data: {"type": "token", "content": "Nhap "}
+
+data: {"type": "token", "content": "mon "}
+
+data: {"type": "token", "content": "Mang "}
+
+data: {"type": "token", "content": "may "}
+
+data: {"type": "token", "content": "tinh "}
+
+data: {"type": "token", "content": "va "}
+
+data: {"type": "token", "content": "An "}
+
+data: {"type": "token", "content": "toan "}
+
+data: {"type": "token", "content": "he "}
+
+data: {"type": "token", "content": "thong.\n\n"}
+
+data: {"type": "token", "content": "### "}
+
+data: {"type": "token", "content": "Gợi "}
+
+data: {"type": "token", "content": "ý "}
+
+data: {"type": "token", "content": "tiếp "}
+
+data: {"type": "token", "content": "theo\n"}
+
+data: {"type": "token", "content": "- "}
+
+data: {"type": "token", "content": "Đọc "}
+
+data: {"type": "token", "content": "lại "}
+
+data: {"type": "token", "content": "phần "}
+
+data: {"type": "token", "content": "vừa "}
+
+data: {"type": "token", "content": "nêu "}
+
+data: {"type": "token", "content": "và "}
+
+data: {"type": "token", "content": "tự "}
+
+data: {"type": "token", "content": "diễn "}
+
+data: {"type": "token", "content": "đạt "}
+
+data: {"type": "token", "content": "bằng "}
+
+data: {"type": "token", "content": "lời "}
+
+data: {"type": "token", "content": "của "}
+
+data: {"type": "token", "content": "bạn.\n"}
+
+data: {"type": "token", "content": "- "}
+
+data: {"type": "token", "content": "Thử "}
+
+data: {"type": "token", "content": "hỏi "}
+
+data: {"type": "token", "content": "với "}
+
+data: {"type": "token", "content": "một "}
+
+data: {"type": "token", "content": "từ "}
+
+data: {"type": "token", "content": "khóa "}
+
+data: {"type": "token", "content": "cụ "}
+
+data: {"type": "token", "content": "thể "}
+
+data: {"type": "token", "content": "hơn, "}
+
+data: {"type": "token", "content": "ví "}
+
+data: {"type": "token", "content": "dụ "}
+
+data: {"type": "token", "content": "tên "}
+
+data: {"type": "token", "content": "một "}
+
+data: {"type": "token", "content": "giao "}
+
+data: {"type": "token", "content": "thức "}
+
+data: {"type": "token", "content": "hoặc "}
+
+data: {"type": "token", "content": "một "}
+
+data: {"type": "token", "content": "lớp "}
+
+data: {"type": "token", "content": "trong "}
+
+data: {"type": "token", "content": "mô "}
+
+data: {"type": "token", "content": "hình "}
+
+data: {"type": "token", "content": "phân "}
+
+data: {"type": "token", "content": "tầng.\n"}
+
+data: {"type": "token", "content": "- "}
+
+data: {"type": "token", "content": "Nếu "}
+
+data: {"type": "token", "content": "còn "}
+
+data: {"type": "token", "content": "vướng "}
+
+data: {"type": "token", "content": "mắc, "}
+
+data: {"type": "token", "content": "bôi "}
+
+data: {"type": "token", "content": "đen "}
+
+data: {"type": "token", "content": "đúng "}
+
+data: {"type": "token", "content": "câu "}
+
+data: {"type": "token", "content": "đang "}
+
+data: {"type": "token", "content": "gây "}
+
+data: {"type": "token", "content": "khó "}
+
+data: {"type": "token", "content": "hiểu "}
+
+data: {"type": "token", "content": "để "}
+
+data: {"type": "token", "content": "nhận "}
+
+data: {"type": "token", "content": "được "}
+
+data: {"type": "token", "content": "giải "}
+
+data: {"type": "token", "content": "thích "}
+
+data: {"type": "token", "content": "sâu "}
+
+data: {"type": "token", "content": "hơn."}
+
+data: {"type": "sources", "sources": [{"sourceId": "slides_ch1#p1#c0", "label": "Trang 1", "documentTitle": "slides_ch1.pdf", "location": "p.1", "snippet": "MANG MAY TINH VA TRUYEN THONG DU LIEU Chuong 1: Tong quan ve Mang may tinh Bai 1: Mo hinh OSI va Kien truc TCP/IP Bai 2: Dia chi IPv4 va Chia Subnet Nguon: Bo giang Nhap mon Mang may tinh va An toan he thong.", "score": 0.8063}]}
+
+data: {"type": "done", "finishReason": "stop"}
+

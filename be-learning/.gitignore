@@ -1,0 +1,35 @@
+# Build output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.project
+.classpath
+.factorypath
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets: application.yml carries a development-only default that
+# JWT_SECRET_KEY overrides in every real environment.
+.env
+.env.*
+*.pem
+*.key
+!.gitkeep
+
+# OSGi / local overrides
+*.log.*

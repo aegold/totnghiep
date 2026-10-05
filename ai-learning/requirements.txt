@@ -1,0 +1,20 @@
+# AI Tutor microservice (FastAPI + RAG)
+#
+# NOTE: sentence-transformers is deliberately NOT listed. It pulls in Torch,
+# which has no dependable Python 3.13 wheel and adds ~2.5 GB. ChromaDB's default
+# ONNX MiniLM embedding function provides working semantic vectors instead.
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+pydantic>=2.6.0
+python-dotenv>=1.0.0
+pypdf>=4.1.0
+httpx>=0.27.0
+numpy>=1.26.0
+
+# Vector store. Optional: services/vector_store.py falls back to a local
+# numpy store when chromadb is unavailable, so the defense demo never dies.
+chromadb>=0.5.0
+
+# Tests
+pytest>=8.0.0
+pytest-asyncio>=0.23.0
